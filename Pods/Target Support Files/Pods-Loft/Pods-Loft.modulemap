@@ -1,4 +1,4 @@
-framework module Pods_Loft {
+module Pods_Loft {
   umbrella header "Pods-Loft-umbrella.h"
 
   export *

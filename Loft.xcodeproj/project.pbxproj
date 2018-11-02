@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2FCC287EACF7B896CFB4A84 /* Pods_Loft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DA2CF7569DA08AF6039FA9 /* Pods_Loft.framework */; };
+		721E1FD033A885C071766E0E /* libPods-Loft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4706A182B1AAB8FB33265C8B /* libPods-Loft.a */; };
 		D422C548216F705700BEBB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422C547216F705700BEBB33 /* AppDelegate.swift */; };
 		D422C54A216F705700BEBB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422C549216F705700BEBB33 /* ViewController.swift */; };
 		D422C54D216F705700BEBB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D422C54B216F705700BEBB33 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23DA2CF7569DA08AF6039FA9 /* Pods_Loft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4706A182B1AAB8FB33265C8B /* libPods-Loft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Loft.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CF2A4AE8ADAFE246DF6A1A /* Pods-Loft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loft.release.xcconfig"; path = "Pods/Target Support Files/Pods-Loft/Pods-Loft.release.xcconfig"; sourceTree = "<group>"; };
 		6191A9FC15969B5739A91994 /* Pods-Loft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loft.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Loft/Pods-Loft.debug.xcconfig"; sourceTree = "<group>"; };
 		D422C544216F705700BEBB33 /* Loft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loft.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FCC287EACF7B896CFB4A84 /* Pods_Loft.framework in Frameworks */,
+				721E1FD033A885C071766E0E /* libPods-Loft.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 		374716FB89320EFDA8D44487 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23DA2CF7569DA08AF6039FA9 /* Pods_Loft.framework */,
+				4706A182B1AAB8FB33265C8B /* libPods-Loft.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,7 +160,6 @@
 				D422C540216F705700BEBB33 /* Sources */,
 				D422C541216F705700BEBB33 /* Frameworks */,
 				D422C542216F705700BEBB33 /* Resources */,
-				CD38645A1835A4E93D717B6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,26 +293,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD38645A1835A4E93D717B6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Loft/Pods-Loft-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Loft/Pods-Loft-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
